@@ -4,22 +4,22 @@
 // Add a condition that checks if either the first or last name is missing. If so, return a string saying “Invalid name input.”
 
 
-// const prompt = require("prompt-sync")()
+const prompt = require("prompt-sync")()
 
-// function formatFullName(firstName, lastName){
+function formatFullName(firstName, lastName){
 
 
-//     if (!firstName || !lastName){
-//         return "Invalid name input. You are missing the first or last name."
-//     }
-//     let formatFirstName = firstName[0].toUpperCase()+firstName.slice(1).toLowerCase()
-//     let formatLastName = lastName[0].toUpperCase()+lastName.slice(1).toLowerCase()
-//         return (`${formatLastName}, ${formatFirstName}`)
+    if (!firstName || !lastName){
+        return "Invalid name input. You are missing the first or last name."
+    }
+    let formatFirstName = firstName[0].toUpperCase()+firstName.slice(1).toLowerCase()
+    let formatLastName = lastName[0].toUpperCase()+lastName.slice(1).toLowerCase()
+        return (`${formatLastName}, ${formatFirstName}`)
 
-// }
-//     let firstName = prompt("What is your first name?")
-//     let lastName = prompt("What is your last name?")
-//         console.log(formatFullName(firstName, lastName))
+}
+    let firstName = prompt("What is your first name?")
+    let lastName = prompt("What is your last name?")
+        console.log(formatFullName(firstName, lastName))
 
 
 
@@ -30,21 +30,21 @@
 // Ensure that price, quantity, and taxRate are all valid numbers. If any are invalid, return a string: “Invalid input.”
 
 
-// let price= 45
-// let quantity= 2
-// let taxRate=.08
+let price= 45
+let quantity= 2
+let taxRate=.08
 
-// function calculateTotalCost(price, quantity, taxRate) {
-//     if (typeof price !== "number" || typeof quantity !== "number" || typeof taxRate !== "number"){ 
-//         return "Invalid input."}
+function calculateTotalCost(price, quantity, taxRate) {
+    if (typeof price !== "number" || typeof quantity !== "number" || typeof taxRate !== "number"){ 
+        return "Invalid input."}
     
 
 
-// let totalCost = (price * quantity) * (1 + taxRate)
-//     return totalCost
-//     }
+let totalCost = (price * quantity) * (1 + taxRate)
+    return totalCost
+    }
 
-//     console.log(calculateTotalCost(45, 2, .08))
+    console.log(calculateTotalCost(45, 2, .08))
 
 
 
@@ -58,29 +58,29 @@
 
 
 
-// // let age=32
-// let age=16
-// let isEmployed=true 
-// // let isEmployed=false
+// let age=32
+let age=16
+let isEmployed=true 
+// let isEmployed=false
 
 
-// function checkEligibility(age, isEmployed){
+function checkEligibility(age, isEmployed){
 
-//     if (age>18 && isEmployed===true){
-//         return(`You are eligible`)
-//     }
+    if (age>18 && isEmployed===true){
+        return(`You are eligible`)
+    }
 
-//     if (age>18 && isEmployed===false){
-//         return(`You are conditionally eligible.`)
-//     } 
+    if (age>18 && isEmployed===false){
+        return(`You are conditionally eligible.`)
+    } 
 
-//     if (age<=18){
-//        return(`You are not eligible.`)
-//     }
+    if (age<=18){
+       return(`You are not eligible.`)
+    }
 
-// }
+}
 
-//        console.log(checkEligibility(16, true))
+       console.log(checkEligibility(16, true))
 
 
 
